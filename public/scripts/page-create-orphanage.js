@@ -36,7 +36,7 @@ function addPhotoField(){
     const container = document.querySelector('#images')
     //pegar container para duplicar .new-image
     const fieldsContainer = document.querySelectorAll('.new-upload')
-    //realizar o cloneda útlima imagem adicionada
+    //realizar o clone da útlima imagem adicionada
     const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
 
     //verificar se o campo está vazio, se sim, não adicionar ao container de imagens
@@ -85,3 +85,12 @@ function toggleSelect(event){
     //verificar se sim ou não
     input.value = button.dataset.value
 }
+
+/* function validate(event) {
+    //validar se lat e lng estão preenchidos
+    const needsLatAndLng = true;
+    if(needsLatAndLng){
+        event.preventDefault()
+        alert('Marque um ponto no mapa.')
+    }
+} */
